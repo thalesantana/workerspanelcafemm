@@ -155,4 +155,6 @@ a.button{
     margin-top: 8px;
     background-color: rgb(19, 8, 8);
 }
-
+.world-icon{
+    width: 3px; 
+}
