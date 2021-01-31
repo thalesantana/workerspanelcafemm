@@ -8,6 +8,7 @@
         <title>Registration</title>  
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='./favicon.ico') }}">
         <link href="../static/style_registrate_page.css" rel="stylesheet">
     </head>
 
@@ -15,7 +16,7 @@
         <header>
            
         </header>
-        <form class="card" method="POST" action="">
+        <form class="card" method="POST" action="{{ url_for('workers') }}">
             <section 
                 class="avatar" 
                 style="background: url(https://source.unsplash.com/collection/4703614/500x500) no-repeat center center /cover">
@@ -60,21 +61,21 @@
                 <div class="item">
                     <div>Gender</div>
                     <div>
-                        <span><input 
-                        type="radio" 
-                        name="gender" 
-                        Value="M" 
-                        {%if member.gender == "M" %}
-                        {%endif%}>Male</span>
+                        <span><input
+                        type="radio"
+                        name="gender"
+                        Value="M"
+
+                        >Male</span>
                         <span><input type="radio" 
                         name="gender" 
-                        Value="F" {%if member.gender == "F" %}
-                        {%endif%}>Female</span>
+                        Value="F"
+                        >Female</span>
                         <span><input type="radio" 
                         name="gender" 
-                        Value="A" {%if member.gender == "A" %}
+                        Value="A"
                         checked
-                        {%endif%}>Other</span>
+                        >Other</span>
                         
                     </div>
                 </div>
