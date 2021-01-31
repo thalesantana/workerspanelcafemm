@@ -6,7 +6,7 @@ function inicializar() {
     mapLink = '<a href="https://openstreetmap.org">OpenStreetMap</a>';
     L.tileLayer(
         'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Map data &copy; ' + mapLink,
+        attribution: 'Cafe ++ &copy; ' + mapLink,
         maxZoom: 16,
         title: '2 Desenvolvedores'
         }).addTo(map);
